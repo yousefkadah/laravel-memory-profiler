@@ -37,7 +37,5 @@
                 "YousefKadah\\LaravelMemoryProfiler\\MemoryProfilerServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
