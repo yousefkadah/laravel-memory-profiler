@@ -106,8 +106,8 @@ class ProfileCommand extends Command
     /**
      * Parse command arguments and options from the input.
      *
-     * @param array<int, string> $arguments
-     * @param array<int, string> $options
+     * @param  array<int, string>  $arguments
+     * @param  array<int, string>  $options
      * @return array<string, mixed>
      */
     protected function parseCommandArguments(array $arguments, array $options): array

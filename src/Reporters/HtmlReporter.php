@@ -7,7 +7,7 @@ class HtmlReporter
     /**
      * Generate an HTML report from profiling data.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public function generate(array $data): string
     {
@@ -17,7 +17,7 @@ class HtmlReporter
     /**
      * Build the complete HTML report.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function buildHtml(array $data): string
     {
@@ -263,7 +263,7 @@ class HtmlReporter
     /**
      * Build the header section.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function buildHeader(array $data): string
     {
@@ -281,7 +281,7 @@ class HtmlReporter
     /**
      * Build the summary metrics section.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function buildSummary(array $data): string
     {
@@ -327,7 +327,7 @@ class HtmlReporter
     /**
      * Build the issues section.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function buildIssues(array $data): string
     {
@@ -363,7 +363,7 @@ class HtmlReporter
     /**
      * Build the charts section.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function buildCharts(array $data): string
     {
@@ -386,7 +386,7 @@ class HtmlReporter
     /**
      * Build the database section.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function buildDatabaseSection(array $data): string
     {
@@ -426,7 +426,7 @@ class HtmlReporter
     /**
      * Build the sample data section.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function buildSampleData(array $data): string
     {
@@ -500,7 +500,7 @@ class HtmlReporter
     /**
      * Build the recommendations section.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function buildRecommendations(array $data): string
     {
@@ -528,7 +528,7 @@ class HtmlReporter
     /**
      * Generate recommendations based on the analysis.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      * @return array<int, array<string, string>>
      */
     protected function generateRecommendations(array $data): array
@@ -574,7 +574,7 @@ class HtmlReporter
     /**
      * Get JavaScript for the report.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function getJavaScript(array $data): string
     {
@@ -700,7 +700,7 @@ class HtmlReporter
     /**
      * Get query types chart JavaScript.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function getQueryTypesChart(array $data): string
     {

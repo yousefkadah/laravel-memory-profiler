@@ -75,8 +75,7 @@ class MemoryProfiler
      * Start profiling a command.
      */
     /**
-     * @param string $commandName
-     * @param array<string, mixed> $commandArguments
+     * @param  array<string, mixed>  $commandArguments
      */
     public function start(string $commandName, array $commandArguments = []): void
     {
@@ -122,9 +121,6 @@ class MemoryProfiler
 
     /**
      * Generate profiling report.
-     */
-    /**
-     * @return string
      */
     protected function generateReport(): string
     {
@@ -195,8 +191,8 @@ class MemoryProfiler
      * Analyze the profiling data for insights.
      */
     /**
-     * @param array<string, mixed> $memoryStats
-     * @param array<string, mixed> $databaseStats
+     * @param  array<string, mixed>  $memoryStats
+     * @param  array<string, mixed>  $databaseStats
      * @return array<string, mixed>
      */
     protected function analyzeData(array $memoryStats, array $databaseStats): array
@@ -222,7 +218,7 @@ class MemoryProfiler
      * Analyze memory-specific issues.
      */
     /**
-     * @param array<string, mixed> $memoryStats
+     * @param  array<string, mixed>  $memoryStats
      * @return array<int, array<string, mixed>>
      */
     protected function analyzeMemoryIssues(array $memoryStats): array
@@ -261,10 +257,6 @@ class MemoryProfiler
 
     /**
      * Format bytes into human-readable format.
-     */
-    /**
-     * @param int $bytes
-     * @return string
      */
     protected function formatBytes(int $bytes): string
     {

@@ -7,7 +7,7 @@ class JsonReporter
     /**
      * Generate a JSON report from profiling data.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public function generate(array $data): string
     {
@@ -17,7 +17,7 @@ class JsonReporter
     /**
      * Enhance the data with additional analysis.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      * @return array<string, mixed>
      */
     protected function enhanceData(array $data): array
@@ -43,7 +43,7 @@ class JsonReporter
     /**
      * Calculate statistical analysis of the memory data.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      * @return array<string, mixed>
      */
     protected function calculateStatistics(array $data): array
@@ -93,7 +93,7 @@ class JsonReporter
     /**
      * Calculate performance metrics.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      * @return array<string, mixed>
      */
     protected function calculatePerformanceMetrics(array $data): array
@@ -115,7 +115,7 @@ class JsonReporter
     /**
      * Calculate memory efficiency score (0-100).
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function calculateMemoryEfficiency(array $data): float
     {
@@ -144,7 +144,7 @@ class JsonReporter
     /**
      * Calculate stability score (0-100).
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function calculateStabilityScore(array $data): float
     {
@@ -167,7 +167,7 @@ class JsonReporter
     /**
      * Calculate leak probability (0-100).
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function calculateLeakProbability(array $data): float
     {
@@ -195,7 +195,7 @@ class JsonReporter
     /**
      * Calculate overall performance grade.
      *
-     * @param array<string, mixed> $metrics
+     * @param  array<string, mixed>  $metrics
      */
     protected function calculatePerformanceGrade(array $metrics): string
     {
@@ -227,7 +227,7 @@ class JsonReporter
     /**
      * Calculate efficiency score (0-100).
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      * @return array<string, mixed>
      */
     protected function calculateEfficiencyScore(array $data): array
@@ -304,7 +304,7 @@ class JsonReporter
     /**
      * Generate detailed recommendations.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      * @return array<int, array<string, mixed>>
      */
     protected function generateDetailedRecommendations(array $data): array
@@ -395,7 +395,7 @@ class JsonReporter
     /**
      * Calculate median of an array.
      *
-     * @param array<int, int|float> $values
+     * @param  array<int, int|float>  $values
      */
     protected function calculateMedian(array $values): float
     {
@@ -416,7 +416,7 @@ class JsonReporter
     /**
      * Calculate standard deviation.
      *
-     * @param array<int, int|float> $values
+     * @param  array<int, int|float>  $values
      */
     protected function calculateStandardDeviation(array $values): float
     {
@@ -434,7 +434,7 @@ class JsonReporter
     /**
      * Calculate percentile.
      *
-     * @param array<int, int|float> $values
+     * @param  array<int, int|float>  $values
      */
     protected function calculatePercentile(array $values, int $percentile): float
     {
