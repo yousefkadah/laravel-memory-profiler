@@ -1,0 +1,51 @@
+/vendor/
+/node_modules/
+/.idea/
+/.vscode/
+/.DS_Store
+Thumbs.db
+
+# Composer
+composer.lock
+
+# PHPUnit
+/build/
+/.phpunit.result.cache
+
+# Test reports
+/storage/memory-profiles-test/
+
+# IDE files
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
