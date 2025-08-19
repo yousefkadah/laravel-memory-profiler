@@ -741,12 +741,16 @@ class HtmlReporter
      */
     protected function getIssueIcon(string $severity): string
     {
-        return match ($severity) {
-            'high' => '🚨',
-            'medium' => '⚠️',
-            'low' => 'ℹ️',
-            default => '⚠️'
-        };
+        switch ($severity) {
+            case 'high':
+                return '🚨';
+            case 'medium':
+                return '⚠️';
+            case 'low':
+                return 'ℹ️';
+            default:
+                return '⚠️';
+        }
     }
 
     /**

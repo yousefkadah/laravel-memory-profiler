@@ -223,8 +223,8 @@ The profiler has minimal performance impact, but you can:
 
 ## Requirements
 
-- PHP 8.0 or higher
-- Laravel 9.0, 10.0, or 11.0
+- PHP 7.4 or higher
+- Laravel 8.0, 9.0, 10.0, or 11.0
 - Sufficient disk space for reports
 
 ## Contributing
