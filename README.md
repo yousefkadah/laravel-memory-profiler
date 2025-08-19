@@ -17,7 +17,7 @@ A Laravel package that provides memory profiling capabilities for Artisan comman
 Install the package via Composer:
 
 ```bash
-composer require yourname/laravel-memory-profiler --dev
+composer require yousefkadah/laravel-memory-profiler --dev
 ```
 
 The package will automatically register its service provider.
